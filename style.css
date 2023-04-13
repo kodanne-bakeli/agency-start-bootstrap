@@ -1,84 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-body{
+
+body {
     font-family: 'Montserrat', sans-serif !important;
 }
-.navbar-brand{
+
+.navbar-brand {
     font-family: 'Kaushan Script', cursive;
 }
-.nav-link:active,.nav-link:hover,.nav-link:focus{
-color:rgb(255, 219, 13) !important;
+
+.nav-link:active,
+.nav-link:hover,
+.nav-link:focus {
+    color: rgb(255, 219, 13) !important;
 }
-#top{
-    background: url(images/header-bg.jpg)no-repeat center/100%;
-    height: 550px ;
+
+#top {
+    background: url(images/header-bg.jpg)no-repeat center;
+    background-size: cover;
+    height: 550px;
 }
-#top h2{
+
+#top h2 {
     font-size: 60px !important;
 }
-#portfolio .col-12 div .hover{
-   font-size: 70px; 
-   color:white ;
-   background-color: rgba(255, 219, 13, 0.918) !important;;
-   position: absolute;
-   align-self: center;
-   top: 0px;
-   padding: 60px;
-   height: 100%;
-   width: 100%;
-   display: none;
+
+#portfolio .col-12 div .hover {
+    font-size: 8em;
+    color: white;
+    background-color: rgba(255, 219, 13, 0.918) !important;
+    position: absolute;
+    align-self: center;
+    top: 0px;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    display: none;
 }
- #portfolio .col-12 div:hover .hover{
+
+#portfolio .col-12 div:hover .hover {
     display: block;
- }
-#title::after{
+}
+
+#title::after {
     content: "";
     border: 1px solid rgba(160, 160, 160, 0.381);
     position: absolute;
-    height: 170vh;
+    height: 98em;
     z-index: -1;
     top: 11rem;
 }
-#about-be-part{
-    width: 13%;
-    border-radius: 90% !important;
-    border: 9px solid rgb(240, 240, 240);
+
+#about-be-part {
+    width: 10rem;
+    border: 9px solid rgb(213, 212, 212);
 }
-#about img{
- border: 9px solid rgba(236, 232, 232, 0.642);
- 
+
+#about img,
+#team .img-fluid {
+    border: 9px solid rgba(219, 216, 216, 0.7);
+
 }
-#contact{
-    background: linear-gradient(rgba(0, 0, 0, 0.5) 0% , rgba(0, 0, 0, 0.5)  100%),
-    url(/images/contact2.jpg) no-repeat center/100%;
-    
+
+#contact {
+    background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/images/contact2.jpg) no-repeat;
+    background-size: cover;
 }
-::placeholder{
-opacity: 0.5;
+
+::placeholder {
+    opacity: 0.5;
 }
-@media screen and (max-width:700px){
-    #top h2{
+
+@media screen and (max-width:767px) {
+    #top h2 {
         font-size: 40px !important;
     }
-    #team .w75{
-        width: 50% !important;
+
+    #title::after {
+        left: 55px;
     }
-@media screen and (max-width:500px){
-    #top h2{
+
+    #about img {
+        width: 55% !important;
+    }
+
+    #about-be-part {
+        width: 7rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #top h2 {
         font-size: 20px !important;
     }
-    input{
-        width: 10px !important;
-        height: 40px !important;
-    }
-    textarea{
-        width: 10px !important;
-        height: 150px;
-    }
-    #top h1{
+
+    #top h1 {
         font-size: 16px !important;
+
     }
-    #team .w75{
-        width: 25% !important;
+
+    #about img {
+        width: 70% !important;
     }
+
+    title::after {
+        height: 136em;
+        left: 60px;
+    }
+
 }
